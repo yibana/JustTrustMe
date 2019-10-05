@@ -1,16 +1,15 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion '25.0.2'
+    compileSdkVersion 23
     defaultConfig {
-        applicationId 'just.trust.me'
+        applicationId 'j.t.me'
         minSdkVersion 16
         targetSdkVersion 23
         versionCode 3
         versionName '.3'
     }
-
+    useLibrary 'org.apache.http.legacy'
     buildTypes {
         release {
             minifyEnabled false
@@ -21,5 +20,6 @@ android {
 }
 
 dependencies {
-    provided fileTree(dir: 'libs', include: ['*.jar'])
+    //implementation fileTree(include: ['*.jar'], dir: 'libs')
+    compileOnly files('libs/api.jar')
 }

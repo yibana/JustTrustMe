@@ -1,4 +1,4 @@
-package just.trust.me;
+package j.t.me;
 
 import android.content.Context;
 import android.net.http.SslError;
@@ -38,19 +38,19 @@ import javax.net.ssl.SSLSession;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
 
-import de.robv.android.xposed.IXposedHookLoadPackage;
-import de.robv.android.xposed.XC_MethodHook;
-import de.robv.android.xposed.XC_MethodReplacement;
-import de.robv.android.xposed.callbacks.XC_LoadPackage.LoadPackageParam;
+import com.power.android.dance.IXposedHookLoadPackage;
+import com.power.android.dance.XC_MethodHook;
+import com.power.android.dance.XC_MethodReplacement;
+import com.power.android.dance.callbacks.XC_LoadPackage.LoadPackageParam;
 
-import static de.robv.android.xposed.XposedHelpers.callMethod;
-import static de.robv.android.xposed.XposedHelpers.callStaticMethod;
-import static de.robv.android.xposed.XposedHelpers.findAndHookConstructor;
-import static de.robv.android.xposed.XposedHelpers.findAndHookMethod;
-import static de.robv.android.xposed.XposedHelpers.findClass;
-import static de.robv.android.xposed.XposedHelpers.getObjectField;
-import static de.robv.android.xposed.XposedHelpers.newInstance;
-import static de.robv.android.xposed.XposedHelpers.setObjectField;
+import static com.power.android.dance.XposedHelpers.callMethod;
+import static com.power.android.dance.XposedHelpers.callStaticMethod;
+import static com.power.android.dance.XposedHelpers.findAndHookConstructor;
+import static com.power.android.dance.XposedHelpers.findAndHookMethod;
+import static com.power.android.dance.XposedHelpers.findClass;
+import static com.power.android.dance.XposedHelpers.getObjectField;
+import static com.power.android.dance.XposedHelpers.newInstance;
+import static com.power.android.dance.XposedHelpers.setObjectField;
 
 public class Main implements IXposedHookLoadPackage {
 
